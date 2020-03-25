@@ -1,0 +1,16 @@
+plugins {
+    id 'war'
+}
+
+group = 'io.github.mjedwabn'
+version = '1.0.0'
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'jakarta.platform:jakarta.jakartaee-api:8.0.0'
+    compileOnly group: 'org.eclipse.microprofile.config', name: 'microprofile-config-api', version: '1.4'
+}
